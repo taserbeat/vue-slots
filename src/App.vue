@@ -6,7 +6,7 @@ import CardList from "./components/CardList.vue";
   <CardList></CardList>
 </template>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -6,8 +6,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     x="0px"
     y="0px"
-    width="52px"
-    height="52px"
+    :width="size"
+    :height="size"
     viewBox="0 0 512 512"
     enable-background="new 0 0 512 512"
     xml:space="preserve"
@@ -47,4 +47,15 @@
 export default {
   name: "RocketIcon",
 };
+</script>
+
+<script setup lang="ts">
+// defineProps<{ size: string }>();
+
+withDefaults(
+  defineProps<{
+    size: string;
+  }>(),
+  { size: "52px" }
+);
 </script>
